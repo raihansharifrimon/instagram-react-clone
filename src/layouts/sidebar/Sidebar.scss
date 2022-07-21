@@ -1,0 +1,77 @@
+.sidebar {
+  &__list {
+    &-item {
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+      padding: 6px 10px;
+
+      &-info {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex: 1 1 auto;
+
+        .username {
+          font-size: 0.975rem;
+          font-weight: 400;
+          margin-bottom: 1px;
+          color: var(--color-primary-text);
+        }
+
+        .name {
+          font-size: 0.75rem;
+          font-weight: 400;
+          color: var(--color-secondary-text);
+        }
+      }
+
+      &-btn {
+        font-size: 0.87rem !important;
+        color: var(--color-primary);
+        font-weight: 400;
+
+        &--black {
+          color: var(--color-primary-text);
+        }
+      }
+    }
+  }
+
+  &__title {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 10px;
+    margin-top: 10px;
+    margin-bottom: 5px;
+
+    .heading {
+      font-size: 0.875rem;
+      font-weight: 400;
+      color: var(--color-secondary-text);
+    }
+  }
+}
+
+.footer {
+  margin-top: 20px;
+  padding: 10px;
+
+  &__link {
+    font-size: 0.75rem;
+    font-weight: 400;
+    text-decoration: none;
+    color: var(--color-secondary-text);
+    display: inline-flex;
+    align-items: center;
+  }
+
+  .copyright {
+    margin-top: 10px;
+    font-size: 0.75rem;
+    font-weight: 300;
+    text-transform: uppercase;
+    color: var(--color-secondary-text);
+  }
+}

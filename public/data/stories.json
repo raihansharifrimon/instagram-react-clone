@@ -1,0 +1,52 @@
+{
+  "stories": [
+    {
+      "id": 1,
+      "user": {
+        "id": 1,
+        "image": "images/users/1.jpg",
+        "online": true,
+        "link": "/users/1",
+        "name": "Harry Potter"
+      },
+      "image": "images/posts/1.jpg",
+      "unseen": true
+    },
+    {
+      "id": 2,
+      "user": {
+        "id": 2,
+        "image": "images/users/2.jpg",
+        "online": true,
+        "link": "/users/2",
+        "name": "Harry Potter"
+      },
+      "image": "images/posts/2.jpg",
+      "unseen": true
+    },
+    {
+      "id": 3,
+      "user": {
+        "id": 3,
+        "image": "images/users/3.jpg",
+        "online": true,
+        "link": "/users/3",
+        "name": "Harry Potter"
+      },
+      "image": "images/posts/3.jpg",
+      "unseen": true
+    },
+    {
+      "id": 4,
+      "user": {
+        "id": 4,
+        "image": "images/users/4.jpg",
+        "online": true,
+        "link": "/users/4",
+        "name": "Harry Potter"
+      },
+      "image": "images/posts/4.jpg",
+      "unseen": true
+    }
+  ]
+}

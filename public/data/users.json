@@ -1,0 +1,68 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "image": "images/users/1.jpg",
+      "online": true,
+      "link": "/users/1",
+      "name": "Harry Potter",
+      "username": "harrypotter"
+    },
+    {
+      "id": 2,
+      "image": "images/users/2.jpg",
+      "online": true,
+      "link": "/users/2",
+      "name": "Don Quixote",
+      "username": "donquixote"
+    },
+    {
+      "id": 3,
+      "image": "images/users/3.jpg",
+      "online": true,
+      "link": "/users/3",
+      "name": "Joan Arc",
+      "username": "joanarc"
+    },
+    {
+      "id": 4,
+      "image": "images/users/4.jpg",
+      "online": true,
+      "link": "/users/4",
+      "name": "Rosa Park",
+      "username": "rosa_park"
+    },
+    {
+      "id": 5,
+      "image": "images/users/5.jpg",
+      "online": true,
+      "link": "/users/5",
+      "name": "Alim Hasan",
+      "username": "alimhasan"
+    },
+    {
+      "id": 6,
+      "image": "images/users/6.jpg",
+      "online": false,
+      "link": "/users/6",
+      "name": "Abdul Khader",
+      "username": "abdul_khader"
+    },
+    {
+      "id": 7,
+      "image": "images/users/7.jpg",
+      "online": false,
+      "link": "/users/7",
+      "name": "Raihanul Islam",
+      "username": "raihanulislam"
+    },
+    {
+      "id": 8,
+      "image": "images/users/8.jpg",
+      "online": false,
+      "link": "/users/8",
+      "name": "Mizanur Rahaman",
+      "username": "mizanurrahaman"
+    }
+  ]
+}

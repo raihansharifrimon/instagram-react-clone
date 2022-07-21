@@ -1,12 +1,19 @@
 import React from "react";
+import "./DefaultLayout.scss";
+import Header from "./header/Header";
+import Sidebar from "./sidebar/Sidebar";
 
 function DefaultLayout({ children }) {
   return (
-    <div>
-      <h1>header</h1>
-      {children}
-      <h1>footer</h1>
-    </div>
+    <>
+      <Header />
+      <div className="container">
+        <div className="main">
+          {children}
+          <Sidebar />
+        </div>
+      </div>
+    </>
   );
 }
 

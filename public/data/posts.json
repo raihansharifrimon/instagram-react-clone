@@ -1,0 +1,85 @@
+{
+  "user": {
+    "username": "harry-potter",
+    "name": "Harry Potter",
+    "image": "images/users/1.jpg"
+  },
+  "posts": [
+    {
+      "id": "8402678390264947303",
+      "user": {
+        "username": "adam",
+        "name": "Adam",
+        "online": true,
+        "image": "images/users/1.jpg"
+      },
+      "posted_on": "1617220982",
+      "likes": 20,
+      "liked": false,
+      "caption": "Content is the information contained within communication media. This includes internet, cinema, television, radio, audio CDs, books, magazines, physical art, and live event content. It’s directed at an end-user or audience in the sectors of publishing, art, and communication.",
+      "image": "images/posts/1.jpg",
+      "comments": [
+        {
+          "text": "Hello!",
+          "created_at": "1617220902",
+          "user": {
+            "username": "adam",
+            "name": "Adam",
+            "online": true,
+            "link": "/",
+            "image": "images/users/2.jpg"
+          }
+        },
+        {
+          "text": "Right yes!",
+          "created_at": "1617221983",
+          "user": {
+            "username": "adil",
+            "name": "Adil khan",
+            "online": false,
+            "link": "/",
+            "image": "images/users/3.jpg"
+          }
+        },
+        {
+          "text": "This is write!",
+          "created_at": "1612220984",
+          "user": {
+            "username": "amit",
+            "name": "Amit Saha",
+            "online": true,
+            "link": "/",
+            "image": "images/users/4.jpg"
+          }
+        }
+      ]
+    },
+    {
+      "id": "8402678390264947301",
+      "user": {
+        "username": "quixote",
+        "name": "Don Quixote",
+        "online": true,
+        "image": "images/users/2.jpg"
+      },
+      "posted_on": "1617220982",
+      "likes": 10,
+      "liked": true,
+      "caption": "Content is the information contained within communication media. This includes internet, cinema, television, radio, audio CDs, books, magazines, physical art, and live event content. It’s directed at an end-user or audience in the sectors of publishing, art, and communication.",
+      "image": "images/posts/2.jpg",
+      "comments": [
+        {
+          "text": "Wow!",
+          "created_at": "1617000982",
+          "user": {
+            "username": "amit",
+            "name": "Amit Saha",
+            "online": true,
+            "link": "/",
+            "image": "images/users/6.jpg"
+          }
+        }
+      ]
+    }
+  ]
+}

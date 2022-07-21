@@ -1,0 +1,37 @@
+.stories {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  border: 1px solid var(--color-border);
+  border-radius: 10px;
+  overflow: hidden;
+  background-color: var(--color-white);
+  margin-bottom: 15px;
+  padding: 10px;
+  column-gap: 15px;
+
+  &__item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .username {
+      font-size: 0.75rem;
+      font-weight: 400;
+    }
+
+    .avatar {
+      margin-right: 0;
+      margin-bottom: 5px;
+      border: 2px solid red;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      img {
+        padding: 3px;
+        border-radius: 50%;
+      }
+    }
+  }
+}

@@ -1,0 +1,129 @@
+.feed {
+  border: 1px solid var(--color-border);
+  border-radius: 10px;
+  overflow: hidden;
+  background-color: var(--color-white);
+  margin-bottom: 15px;
+
+  &__header {
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: var(--color-white);
+
+    &-user {
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+    }
+  }
+
+  &__contents {
+    &-images {
+      max-height: 600px;
+      width: 100%;
+      overflow: hidden;
+      cursor: pointer;
+
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+    }
+
+    &-reactions {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 10px;
+
+      .feed-reaction-btn {
+        --size: 25px;
+        margin-right: 15px;
+        svg {
+          width: var(--size);
+          height: var(--size);
+          fill: var(--color-primary-text);
+          color: var(--color-primary-text);
+        }
+
+        &--bookmark {
+          margin-right: 0;
+        }
+      }
+    }
+
+    &-content {
+      padding: 10px;
+      font-size: 0.875rem;
+      font-weight: 400;
+      color: var(--color-primary-text);
+
+      .like {
+        margin-bottom: 10px;
+      }
+
+      a {
+        text-decoration: none;
+        font-weight: 600;
+        color: var(--color-primary-text);
+      }
+
+      .contents {
+        margin-bottom: 10px;
+      }
+
+      .meta {
+        color: var(--color-secondary-text);
+        margin-bottom: 10px;
+        font-size: 0.75rem;
+      }
+
+      .time {
+        text-transform: uppercase;
+      }
+    }
+
+    &-form {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      border-top: 1px solid var(--color-border);
+      padding: 5px 10px;
+
+      .comment-input.input-control {
+        background-color: transparent;
+        font: 0.875rem;
+        font-weight: 400;
+
+        &::placeholder {
+          color: var(--color-secondary-text);
+          font-size: 0.85rem;
+        }
+      }
+
+      form {
+        width: 100%;
+        display: flex;
+      }
+
+      .comment-btn.btn {
+        color: var(--color-primary);
+        font-weight: 400;
+
+        &.disable {
+          pointer-events: none;
+          opacity: 0.5;
+          user-select: none;
+        }
+      }
+      .emoji-btn.btn {
+        font-size: 1.4rem;
+        display: flex;
+        align-items: center;
+      }
+    }
+  }
+}
