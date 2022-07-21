@@ -1,0 +1,20 @@
+@import "./variables";
+
+:root {
+  --color-primary: #{$primary-color};
+  --color-primary-text: #{$primary-color-text};
+  --color-secondary-text: #{$secondary-color-text};
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Noto Sans", sans-serif;
+  color: var(--color-primary-text);
+  font-size: 12px;
+  line-height: 1.34;
+}
