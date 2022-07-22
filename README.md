@@ -1,4 +1,5 @@
 # Getting Started with Create React App
+<img src="https://github.com/raihansharifrimon/instagram-react-clone/blob/master/public/images/instagram-ss.png">
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
