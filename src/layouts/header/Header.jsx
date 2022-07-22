@@ -8,7 +8,7 @@ function Header() {
     name: "Habib",
     username: "habib",
     link: "/",
-    image: "/images/users/1.jpg",
+    profile_picture: "/images/users/1.jpg",
     online: false,
   };
   return (

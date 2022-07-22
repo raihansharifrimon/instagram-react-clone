@@ -3,3 +3,38 @@
   grid-template-columns: 68% 38%;
   margin: 0 60px;
 }
+
+@media (max-width: 992px) {
+  .container {
+    max-width: 90%;
+  }
+
+  .main-content__inner {
+    margin-right: 0 !important;
+  }
+
+  .sidebar {
+    display: none;
+  }
+
+  .main {
+    grid-template-columns: 100%;
+  }
+
+  .feed__contents-images {
+    max-width: 100% !important;
+  }
+
+  .header__contents {
+    justify-content: flex-end;
+  }
+  .header__search-bar {
+    display: none;
+  }
+}
+
+@media (max-width: 480px) {
+  .main {
+    margin: 0 40px;
+  }
+}
