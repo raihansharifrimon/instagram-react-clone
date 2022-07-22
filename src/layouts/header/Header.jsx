@@ -22,14 +22,17 @@ function Header() {
           </div>
           <div className="header__contents">
             <div className="header__search-bar">
-              <input className="input-control" placeholder="Search" type="text" />
+              <input
+                className="input-control"
+                placeholder="Search"
+                type="text"
+              />
             </div>
             <ul className="header__navs">
               <li className="header__navs-item">
                 <Link className="header__navs-item-link" to="/">
                   <svg
-                    ariaLabel="Home"
-                    class="_ab6-"
+                    className="_ab6-"
                     color="#262626"
                     fill="#262626"
                     height="24"
@@ -43,8 +46,7 @@ function Header() {
               <li className="header__navs-item">
                 <Link className="header__navs-item-link" to="/">
                   <svg
-                    ariaLabel="Messenger"
-                    class="_ab6-"
+                    className="_ab6-"
                     color="#262626"
                     fill="#262626"
                     height="24"
@@ -66,8 +68,7 @@ function Header() {
               <li className="header__navs-item">
                 <Link className="header__navs-item-link" to="/">
                   <svg
-                    ariaLabel="New post"
-                    class="_ab6-"
+                    className="_ab6-"
                     color="#262626"
                     fill="#262626"
                     height="24"
@@ -107,8 +108,6 @@ function Header() {
               <li className="header__navs-item">
                 <Link className="header__navs-item-link" to="/">
                   <svg
-                    ariaLabel="Find People"
-                    class="_ab6-"
                     color="#262626"
                     fill="#262626"
                     height="24"
@@ -123,7 +122,7 @@ function Header() {
                       strokeLinejoin="round"
                       strokeWidth="2"></polygon>
                     <polygon
-                      fill-rule="evenodd"
+                      fillRule="evenodd"
                       points="10.06 10.056 13.949 13.945 7.581 16.424 10.06 10.056"></polygon>
                     <circle
                       cx="12.001"
@@ -140,8 +139,7 @@ function Header() {
               <li className="header__navs-item">
                 <Link className="header__navs-item-link" to="/">
                   <svg
-                    ariaLabel="Activity Feed"
-                    class="_ab6-"
+                    className="_ab6-"
                     color="#262626"
                     fill="#262626"
                     height="24"

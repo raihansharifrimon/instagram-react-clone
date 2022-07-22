@@ -21,10 +21,11 @@
 
   &__contents {
     &-images {
-      max-height: 600px;
+      max-height: 640px;
       width: 100%;
       overflow: hidden;
       cursor: pointer;
+      max-width: 640px;
 
       img {
         width: 100%;
@@ -40,13 +41,17 @@
       padding: 10px;
 
       .feed-reaction-btn {
-        --size: 25px;
+        --size: 24px;
         margin-right: 15px;
         svg {
           width: var(--size);
           height: var(--size);
           fill: var(--color-primary-text);
           color: var(--color-primary-text);
+
+          &.loved {
+            fill: var(--color-error);
+          }
         }
 
         &--bookmark {
@@ -63,6 +68,15 @@
 
       .like {
         margin-bottom: 10px;
+      }
+
+      .tags {
+        margin-bottom: 10px;
+
+        a {
+          color: var(--color-primary);
+          font-weight: 400;
+        }
       }
 
       a {
@@ -83,6 +97,7 @@
 
       .time {
         text-transform: uppercase;
+        font-size: .75rem;
       }
     }
 
@@ -124,6 +139,31 @@
         display: flex;
         align-items: center;
       }
+    }
+  }
+}
+
+.comments {
+  &__item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 8px;
+
+    a {
+      flex: 0;
+      font-size: 0.75rem !important;
+      margin-right: 5px;
+    }
+
+    .text {
+      flex: 1 1 auto;
+      font-size: .75rem;
+    }
+
+    svg {
+      width: 16px;
+      height: 16px;
     }
   }
 }

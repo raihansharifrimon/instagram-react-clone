@@ -1,7 +1,7 @@
-import { useEffect, useState } from "react";
 import { BsDot } from "react-icons/bs";
 import { Link } from "react-router-dom";
 import Avatar from "../../common/avatar/Avatar";
+import useFetch from "../../hooks/useFetch";
 import "./Sidebar.scss";
 
 function Sidebar() {
@@ -9,30 +9,13 @@ function Sidebar() {
     name: "Habib",
     username: "habib",
     link: "/",
-    image: "/images/users/1.jpg",
+    profile_picture: "/images/users/1.jpg",
     online: false,
   };
 
-  const [users, setUsers] = useState([]);
+  const [data] = useFetch("./data/users.json");
+  const users = data.users;
 
-  const getData = () => {
-    fetch("./data/users.json", {
-      headers: {
-        "Content-Type": "application/json",
-        Accept: "application/json",
-      },
-    })
-      .then(function (response) {
-        return response.json();
-      })
-      .then(function (myJson) {
-        setUsers(myJson.users);
-      });
-  };
-
-  useEffect(() => {
-    getData();
-  }, []);
   return (
     <div className="sidebar">
       <div className="sidebar__list">
@@ -57,7 +40,7 @@ function Sidebar() {
         {users &&
           users.length > 0 &&
           users.map((user) => (
-            <div className="sidebar__list-item">
+            <div key={user.id} className="sidebar__list-item">
               <Avatar user={user} size={40} />
               <div className="sidebar__list-item-info">
                 <div className="user-info">
